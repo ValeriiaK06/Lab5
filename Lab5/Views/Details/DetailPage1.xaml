@@ -2,9 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lab5.Views.Details.DetailPage1"
-             Title="Деталі">
-    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center" HorizontalOptions="Center">
-        <Label Text="Це сторінка деталей" FontSize="24" />
-        <Button Text="Повернутися назад" Clicked="OnBackClicked" />
-    </VerticalStackLayout>
+             Title="Про зал"
+             BackgroundColor="{StaticResource Primary}">
+	<ScrollView>
+		<VerticalStackLayout Padding="20" Spacing="14">
+
+			<Label Text="🏛️ PowerZone — про нас" FontSize="24" FontAttributes="Bold"
+                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+
+			<Border BackgroundColor="{StaticResource Secondary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="📍 Адреса" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+					<Label Text="вул. Спортивна, 15, Одеса" TextColor="{StaticResource Gray200}"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Border BackgroundColor="{StaticResource Secondary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="🕐 Графік роботи" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+					<Label Text="Пн–Пт: 06:00 – 23:00" TextColor="{StaticResource Gray200}"/>
+					<Label Text="Сб–Нд: 08:00 – 21:00" TextColor="{StaticResource Gray200}"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Border BackgroundColor="{StaticResource Secondary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="📞 Контакти" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+					<Label Text="Телефон: +38 (048) 123-45-67" TextColor="{StaticResource Gray200}"/>
+					<Label Text="Email: info@powerzone.ua" TextColor="{StaticResource Gray200}"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Button Text="← Назад" Clicked="OnBackClicked"
+                    BackgroundColor="{StaticResource Secondary}"
+                    TextColor="{StaticResource Accent}" CornerRadius="10"/>
+
+		</VerticalStackLayout>
+	</ScrollView>
 </ContentPage>

@@ -11,9 +11,13 @@
 
 
     <Shell.FlyoutHeader>
-        <Grid HeightRequest="100" BackgroundColor="{StaticResource Primary}" Padding="16">
-            <Label Text="Навігація" TextColor="White" FontSize="20"
-               VerticalOptions="End" FontAttributes="Bold"/>
+        <Grid HeightRequest="120" BackgroundColor="{StaticResource Primary}" Padding="20">
+            <VerticalStackLayout VerticalOptions="End" Spacing="2">
+                <Label Text="💪 PowerZone" TextColor="{StaticResource Accent}"
+                   FontSize="22" FontAttributes="Bold"/>
+                <Label Text="Спортивна зала" TextColor="{StaticResource Gray300}"
+                   FontSize="13"/>
+            </VerticalStackLayout>
         </Grid>
     </Shell.FlyoutHeader>
 
@@ -21,7 +25,7 @@
     <FlyoutItem Title="Розділ 1 (Головна)" Route="section1">
         <Tab Title="Вкладки">
             <ShellContent Title="Головна" Route="mainpage" ContentTemplate="{DataTemplate views:MainSectionPage}" />
-            <ShellContent Title="Сторінка 1" Route="page1" ContentTemplate="{DataTemplate views:SectionPage1}" />
+            <ShellContent Title="Розклад" Route="page1" ContentTemplate="{DataTemplate views:SectionPage1}" />
         </Tab>
     </FlyoutItem>
 

@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Lab5.Views;
 
-namespace Lab5.Views
+public partial class MainSectionPage : ContentPage
 {
-    public partial class MainSectionPage : ContentPage
+    public MainSectionPage()
     {
-        public MainSectionPage()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
+    private async void OnDetailClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("detailpage");
+    }
+
+    private async void OnHelpClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("helppage");
     }
 }

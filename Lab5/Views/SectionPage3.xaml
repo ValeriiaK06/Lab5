@@ -2,9 +2,60 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lab5.Views.SectionPage3"
-             Title="Розділ 3">
-    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center" HorizontalOptions="Center">
-        <Label Text="Розділ 3" FontSize="24" />
-        <Button Text="Відкрити динамічну сторінку" Clicked="OnDynamicPageClicked" />
-    </VerticalStackLayout>
+             Title="Абонементи"
+             BackgroundColor="{StaticResource Primary}">
+	<ScrollView>
+		<VerticalStackLayout Padding="20" Spacing="14">
+
+			<Label Text="💳 Абонементи" FontSize="26" FontAttributes="Bold"
+                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
+
+			<Border BackgroundColor="{StaticResource Secondary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="🥉 Базовий" FontSize="17" FontAttributes="Bold"
+                           TextColor="{StaticResource Gray200}"/>
+					<Label Text="• Доступ до тренажерного залу" TextColor="{StaticResource Gray300}"/>
+					<Label Text="• Необмежена кількість відвідувань" TextColor="{StaticResource Gray300}"/>
+					<Label Text="• Шафки для речей" TextColor="{StaticResource Gray300}"/>
+					<Label Text="799 грн / місяць" FontSize="18" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Border BackgroundColor="{StaticResource Tertiary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="🥇 Преміум ⭐" FontSize="17" FontAttributes="Bold"
+                           TextColor="White"/>
+					<Label Text="• Все з базового" TextColor="{StaticResource Gray100}"/>
+					<Label Text="• Групові заняття включено" TextColor="{StaticResource Gray100}"/>
+					<Label Text="• Консультація тренера 2×/місяць" TextColor="{StaticResource Gray100}"/>
+					<Label Text="• Сауна та басейн" TextColor="{StaticResource Gray100}"/>
+					<Label Text="1 499 грн / місяць" FontSize="18" FontAttributes="Bold"
+                           TextColor="White"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Border BackgroundColor="{StaticResource Secondary}"
+                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+				<VerticalStackLayout Spacing="6">
+					<Label Text="👑 VIP" FontSize="17" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+					<Label Text="• Все з Преміум" TextColor="{StaticResource Gray300}"/>
+					<Label Text="• Персональний тренер 3×/тиждень" TextColor="{StaticResource Gray300}"/>
+					<Label Text="• Масаж 1×/тиждень" TextColor="{StaticResource Gray300}"/>
+					<Label Text="• Харчовий план від дієтолога" TextColor="{StaticResource Gray300}"/>
+					<Label Text="2 999 грн / місяць" FontSize="18" FontAttributes="Bold"
+                           TextColor="{StaticResource Accent}"/>
+				</VerticalStackLayout>
+			</Border>
+
+			<Button Text="Порівняти тарифи детальніше"
+                    Clicked="OnDynamicPageClicked"
+                    BackgroundColor="{StaticResource Tertiary}"
+                    TextColor="White" CornerRadius="10"/>
+
+		</VerticalStackLayout>
+	</ScrollView>
 </ContentPage>
