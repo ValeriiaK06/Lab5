@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Lab5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Lab5"
+    Title="Lab5"
+    FlyoutBehavior="Flyout">
+
+
+    <FlyoutItem Title="Розділ 1 (Головна)" Route="section1">
+        <Tab Title="Вкладки">
+            <ShellContent Title="Головна" Route="mainpage" ContentTemplate="{DataTemplate views:MainSectionPage}" />
+            <ShellContent Title="Сторінка 1" Route="page1" ContentTemplate="{DataTemplate views:SectionPage1}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Розділ 2" Route="section2">
+        <ShellContent ContentTemplate="{DataTemplate views:SectionPage2}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Розділ 3" Route="section3">
+        <ShellContent ContentTemplate="{DataTemplate views:SectionPage3}" />
+    </FlyoutItem>
+
+    <!--<ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+</Shell>
