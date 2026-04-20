@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab5.Views
-{
-class SectionPage1
-{
-}
-}
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab5.Views.SectionPage1"
+             Title="Сторінка 1">
+    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Це Сторінка 1 (Вкладка 2)" FontSize="24" />
+    </VerticalStackLayout>
+</ContentPage>
