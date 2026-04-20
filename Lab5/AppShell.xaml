@@ -6,7 +6,16 @@
     xmlns:local="clr-namespace:Lab5"
     xmlns:views="clr-namespace:Lab5.Views"
     Title="Lab5"
+    Shell.NavBarHasShadow="False"
     FlyoutBehavior="Flyout">
+
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="{StaticResource Primary}" Padding="16">
+            <Label Text="Навігація" TextColor="White" FontSize="20"
+               VerticalOptions="End" FontAttributes="Bold"/>
+        </Grid>
+    </Shell.FlyoutHeader>
 
 
     <FlyoutItem Title="Розділ 1 (Головна)" Route="section1">

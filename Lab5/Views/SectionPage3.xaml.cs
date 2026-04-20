@@ -18,5 +18,7 @@ namespace Lab5.Views
             var parameters = new Dictionary<string, object> { { "source_data", "Розділу 3" } };
             await Shell.Current.GoToAsync("dynamicpage", parameters);
         }
+
+
     }
 }

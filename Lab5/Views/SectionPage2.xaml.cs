@@ -13,6 +13,8 @@ namespace Lab5.Views
             InitializeComponent();
         }
 
+
+
         private async void OnDynamicPageClicked(object sender, EventArgs e)
         {
             var parameters = new Dictionary<string, object> { { "source_data", "Розділу 2" } };

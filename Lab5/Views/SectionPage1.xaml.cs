@@ -12,5 +12,6 @@ namespace Lab5.Views
         {
             InitializeComponent();
         }
+
     }
 }

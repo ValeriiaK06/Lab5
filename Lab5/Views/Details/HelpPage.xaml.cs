@@ -17,5 +17,7 @@ namespace Lab5.Views.Details
         {
             await Shell.Current.GoToAsync("..");
         }
+
+
     }
 }
