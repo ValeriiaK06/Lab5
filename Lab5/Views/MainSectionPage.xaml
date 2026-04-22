@@ -42,6 +42,10 @@
 			<Button Text="Довідка" Clicked="OnHelpClicked"
                     BackgroundColor="{StaticResource Secondary}" TextColor="{StaticResource Accent}"
                     CornerRadius="10"/>
+            <Button Text="Перейти до Тренажерів (абсолютна навігація)"
+        Clicked="OnAbsoluteNavClicked"
+        BackgroundColor="{StaticResource Secondary}"
+        TextColor="{StaticResource Accent}" CornerRadius="10"/>
 
 		</VerticalStackLayout>
 	</ScrollView>

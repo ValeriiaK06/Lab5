@@ -16,4 +16,9 @@ public partial class MainSectionPage : ContentPage
     {
         await Shell.Current.GoToAsync("helppage");
     }
+
+    private async void OnAbsoluteNavClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//section2");
+    }
 }

@@ -22,18 +22,18 @@
     </Shell.FlyoutHeader>
 
 
-    <FlyoutItem Title="Розділ 1 (Головна)" Route="section1">
+    <FlyoutItem Title="Головна (розділ 1)" Route="section1">
         <Tab Title="Вкладки">
             <ShellContent Title="Головна" Route="mainpage" ContentTemplate="{DataTemplate views:MainSectionPage}" />
             <ShellContent Title="Розклад" Route="page1" ContentTemplate="{DataTemplate views:SectionPage1}" />
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Розділ 2" Route="section2">
+    <FlyoutItem Title="Тренажери (розділ 2)" Route="section2">
         <ShellContent ContentTemplate="{DataTemplate views:SectionPage2}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Розділ 3" Route="section3">
+    <FlyoutItem Title="Абонементи (розділ 3)" Route="section3">
         <ShellContent ContentTemplate="{DataTemplate views:SectionPage3}" />
     </FlyoutItem>
 
