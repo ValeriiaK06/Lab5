@@ -53,6 +53,10 @@
                     BackgroundColor="{StaticResource Tertiary}"
                     TextColor="White" CornerRadius="10"/>
 
-		</VerticalStackLayout>
+            <Button Text="Довідка" Clicked="OnHelpClicked"
+        BackgroundColor="{StaticResource Secondary}"
+        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+
+        </VerticalStackLayout>
 	</ScrollView>
 </ContentPage>

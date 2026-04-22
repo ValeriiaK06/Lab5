@@ -16,8 +16,8 @@
 					<Label Text="Пн" FontAttributes="Bold" TextColor="{StaticResource Accent}"
                            FontSize="16" VerticalOptions="Center"/>
 					<VerticalStackLayout Grid.Column="1" Spacing="2">
-						<Label Text="Силове тренування — 09:00" TextColor="{StaticResource Gray200}"/>
-						<Label Text="Йога — 18:30" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Силове тренування - 09:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Йога - 18:30" TextColor="{StaticResource Gray200}"/>
 					</VerticalStackLayout>
 				</Grid>
 			</Border>
@@ -28,8 +28,8 @@
 					<Label Text="Вт" FontAttributes="Bold" TextColor="{StaticResource Accent}"
                            FontSize="16" VerticalOptions="Center"/>
 					<VerticalStackLayout Grid.Column="1" Spacing="2">
-						<Label Text="Кардіо — 10:00" TextColor="{StaticResource Gray200}"/>
-						<Label Text="Бокс — 19:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Кардіо - 10:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Бокс - 19:00" TextColor="{StaticResource Gray200}"/>
 					</VerticalStackLayout>
 				</Grid>
 			</Border>
@@ -40,8 +40,8 @@
 					<Label Text="Ср" FontAttributes="Bold" TextColor="{StaticResource Accent}"
                            FontSize="16" VerticalOptions="Center"/>
 					<VerticalStackLayout Grid.Column="1" Spacing="2">
-						<Label Text="Силове тренування — 09:00" TextColor="{StaticResource Gray200}"/>
-						<Label Text="Пілатес — 17:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Силове тренування - 09:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Пілатес - 17:00" TextColor="{StaticResource Gray200}"/>
 					</VerticalStackLayout>
 				</Grid>
 			</Border>
@@ -52,8 +52,8 @@
 					<Label Text="Чт" FontAttributes="Bold" TextColor="{StaticResource Accent}"
                            FontSize="16" VerticalOptions="Center"/>
 					<VerticalStackLayout Grid.Column="1" Spacing="2">
-						<Label Text="Кросфіт — 08:00" TextColor="{StaticResource Gray200}"/>
-						<Label Text="Розтяжка — 20:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Кросфіт - 08:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Розтяжка - 20:00" TextColor="{StaticResource Gray200}"/>
 					</VerticalStackLayout>
 				</Grid>
 			</Border>
@@ -64,11 +64,14 @@
 					<Label Text="Пт" FontAttributes="Bold" TextColor="{StaticResource Accent}"
                            FontSize="16" VerticalOptions="Center"/>
 					<VerticalStackLayout Grid.Column="1" Spacing="2">
-						<Label Text="Силове тренування — 09:00" TextColor="{StaticResource Gray200}"/>
-						<Label Text="Зумба — 18:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Силове тренування - 09:00" TextColor="{StaticResource Gray200}"/>
+						<Label Text="Зумба - 18:00" TextColor="{StaticResource Gray200}"/>
 					</VerticalStackLayout>
 				</Grid>
 			</Border>
+            <Button Text="Довідка" Clicked="OnHelpClicked"
+        BackgroundColor="{StaticResource Secondary}"
+        TextColor="{StaticResource Accent}" CornerRadius="10"/>
 
 		</VerticalStackLayout>
 	</ScrollView>

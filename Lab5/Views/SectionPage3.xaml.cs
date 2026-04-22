@@ -15,8 +15,13 @@ namespace Lab5.Views
 
         private async void OnDynamicPageClicked(object sender, EventArgs e)
         {
-            var parameters = new Dictionary<string, object> { { "source_data", "Розділу 3" } };
+            var parameters = new Dictionary<string, object> { { "source_data", "Абонементи - Розділу 3" } };
             await Shell.Current.GoToAsync("dynamicpage", parameters);
+        }
+
+        private async void OnHelpClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("helppage");
         }
 
 

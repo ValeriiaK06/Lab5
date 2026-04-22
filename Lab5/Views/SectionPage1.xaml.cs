@@ -12,6 +12,9 @@ namespace Lab5.Views
         {
             InitializeComponent();
         }
-
+        private async void OnHelpClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("helppage");
+        }
     }
 }
