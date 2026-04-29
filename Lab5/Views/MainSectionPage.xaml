@@ -4,49 +4,60 @@
              x:Class="Lab5.Views.MainSectionPage"
              Title="Головна"
              BackgroundColor="{StaticResource Primary}">
-	<ScrollView>
-		<VerticalStackLayout Padding="20" Spacing="16">
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
 
-			<Label Text="💪 PowerZone" FontSize="32" FontAttributes="Bold"
-                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
-			<Label Text="Ваша спортивна зала у кишені"
-                   FontSize="14" TextColor="{StaticResource Gray300}"
-                   HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="16">
 
-			<BoxView HeightRequest="1" Color="{StaticResource Secondary}" Margin="0,8"/>
+                <Label Text="💪 PowerZone" FontSize="32" FontAttributes="Bold"
+                       TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
+                <Label Text="Ваша спортивна зала у кишені"
+                       FontSize="14" TextColor="{StaticResource Gray300}"
+                       HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="🏋️ Тренування сьогодні" FontSize="16"
-                           FontAttributes="Bold" TextColor="{StaticResource Accent}"/>
-					<Label Text="Силове тренування — 18:00" TextColor="{StaticResource Gray200}"/>
-					<Label Text="Тренер: Олексій Коваль" TextColor="{StaticResource Gray300}" FontSize="13"/>
-				</VerticalStackLayout>
-			</Border>
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}" Margin="0,8"/>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="📊 Ваша статистика" FontSize="16"
-                           FontAttributes="Bold" TextColor="{StaticResource Accent}"/>
-					<Label Text="Відвідувань цього місяця: 12" TextColor="{StaticResource Gray200}"/>
-					<Label Text="Спалено калорій: 4 800 ккал" TextColor="{StaticResource Gray200}"/>
-					<Label Text="Активних днів поспіль: 5 🔥" TextColor="{StaticResource Gray200}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🏋️ Тренування сьогодні" FontSize="16"
+                               FontAttributes="Bold" TextColor="{StaticResource Accent}"/>
+                        <Label Text="Силове тренування — 18:00" TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Тренер: Олексій Коваль" TextColor="{StaticResource Gray300}" FontSize="13"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Button Text="Детальніше про зал" Clicked="OnDetailClicked"
-                    BackgroundColor="{StaticResource Tertiary}" TextColor="White"
-                    CornerRadius="10"/>
-			<Button Text="Довідка" Clicked="OnHelpClicked"
-                    BackgroundColor="{StaticResource Secondary}" TextColor="{StaticResource Accent}"
-                    CornerRadius="10"/>
-            <Button Text="Перейти до Тренажерів (абсолютна навігація)"
-        Clicked="OnAbsoluteNavClicked"
-        BackgroundColor="{StaticResource Secondary}"
-        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📊 Ваша статистика" FontSize="16"
+                               FontAttributes="Bold" TextColor="{StaticResource Accent}"/>
+                        <Label Text="Відвідувань цього місяця: 12" TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Спалено калорій: 4 800 ккал" TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Активних днів поспіль: 5 🔥" TextColor="{StaticResource Gray200}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-		</VerticalStackLayout>
-	</ScrollView>
+                <Button Text="Детальніше про зал" Clicked="OnDetailClicked"
+                        BackgroundColor="{StaticResource Tertiary}" TextColor="White"
+                        CornerRadius="10"/>
+                <Button Text="Довідка" Clicked="OnHelpClicked"
+                        BackgroundColor="{StaticResource Secondary}" TextColor="{StaticResource Accent}"
+                        CornerRadius="10"/>
+                <Button Text="Перейти до Тренажерів (абсолютна навігація)"
+                        Clicked="OnAbsoluteNavClicked"
+                        BackgroundColor="{StaticResource Secondary}"
+                        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,10">
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}"/>
+                <Label Text="© All rights reserved by Valeriia"
+                       FontSize="11" TextColor="{StaticResource Gray500}"
+                       HorizontalOptions="Center" Margin="0,4,0,0"/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

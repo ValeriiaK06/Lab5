@@ -37,8 +37,4 @@
         <ShellContent ContentTemplate="{DataTemplate views:SectionPage3}" />
     </FlyoutItem>
 
-    <!--<ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
-
 </Shell>

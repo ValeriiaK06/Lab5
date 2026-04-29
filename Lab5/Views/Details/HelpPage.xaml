@@ -4,46 +4,57 @@
              x:Class="Lab5.Views.Details.HelpPage"
              Title="Довідка"
              BackgroundColor="{StaticResource Primary}">
-	<ScrollView>
-		<VerticalStackLayout Padding="20" Spacing="14">
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
 
-			<Label Text="❓ Довідка" FontSize="26" FontAttributes="Bold"
-                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
+            <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="14">
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="🏋️ Як записатися на тренування?" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Перейдіть до розділу Розклад, оберіть зручний час та натисніть Записатися."
-                           TextColor="{StaticResource Gray200}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Label Text="❓ Довідка" FontSize="26" FontAttributes="Bold"
+                       TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="💳 Як змінити абонемент?" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Зайдіть до розділу Абонементи, оберіть потрібний тариф і зверніться на рецепцію."
-                           TextColor="{StaticResource Gray200}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🏋️ Як записатися на тренування?" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Перейдіть до розділу Розклад, оберіть зручний час та натисніть Записатися."
+                               TextColor="{StaticResource Gray200}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="📞 Потрібна допомога?" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Зателефонуйте нам: +38 (048) 123-45-67" TextColor="{StaticResource Gray200}"/>
-					<Label Text="або напишіть: info@powerzone.ua" TextColor="{StaticResource Gray200}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="💳 Як змінити абонемент?" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Зайдіть до розділу Абонементи, оберіть потрібний тариф і зверніться на рецепцію."
+                               TextColor="{StaticResource Gray200}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Button Text="Закрити" Clicked="OnCloseClicked"
-                    BackgroundColor="{StaticResource Secondary}"
-                    TextColor="{StaticResource Accent}" CornerRadius="10"/>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📞 Потрібна допомога?" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Зателефонуйте нам: +38 (048) 123-45-67" TextColor="{StaticResource Gray200}"/>
+                        <Label Text="або напишіть: info@powerzone.ua" TextColor="{StaticResource Gray200}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-		</VerticalStackLayout>
-	</ScrollView>
+                <Button Text="Закрити" Clicked="OnCloseClicked"
+                        BackgroundColor="{StaticResource Secondary}"
+                        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,10">
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}"/>
+                <Label Text="© All rights reserved by Valeriia"
+                       FontSize="11" TextColor="{StaticResource Gray500}"
+                       HorizontalOptions="Center" Margin="0,4,0,0"/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

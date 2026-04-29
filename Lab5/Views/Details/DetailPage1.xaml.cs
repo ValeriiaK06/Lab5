@@ -15,7 +15,6 @@ namespace Lab5.Views.Details
 
         private async void OnBackClicked(object sender, EventArgs e)
         {
-            // Повернення назад через відносну навігацію
             await Shell.Current.GoToAsync("..");
         }
     }

@@ -4,59 +4,69 @@
              x:Class="Lab5.Views.SectionPage2"
              Title="Тренажери"
              BackgroundColor="{StaticResource Primary}">
-	<ScrollView>
-		<VerticalStackLayout Padding="20" Spacing="14">
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
 
-			<Label Text="🏗️ Тренажерний зал" FontSize="26" FontAttributes="Bold"
-                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
-			<Label Text="Сучасне обладнання для будь-якого рівня"
-                   TextColor="{StaticResource Gray300}" HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" FontSize="13"/>
+            <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="14">
 
-			<BoxView HeightRequest="1" Color="{StaticResource Secondary}" Margin="0,4"/>
+                <Label Text="🏗️ Тренажерний зал" FontSize="26" FontAttributes="Bold"
+                       TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
+                <Label Text="Сучасне обладнання для будь-якого рівня"
+                       TextColor="{StaticResource Gray300}" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" FontSize="13"/>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="4">
-					<Label Text="🏋️ Вільні ваги" FontSize="16" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Штанги, гантелі від 2 до 50 кг, лавки для жиму"
-                           TextColor="{StaticResource Gray200}"/>
-					<Label Text="Зона: A1–A8" TextColor="{StaticResource Gray400}" FontSize="12"/>
-				</VerticalStackLayout>
-			</Border>
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}" Margin="0,4"/>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="4">
-					<Label Text="🚴 Кардіозона" FontSize="16" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Бігові доріжки, велотренажери, еліптичні тренажери"
-                           TextColor="{StaticResource Gray200}"/>
-					<Label Text="Зона: B1–B12" TextColor="{StaticResource Gray400}" FontSize="12"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="🏋️ Вільні ваги" FontSize="16" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Штанги, гантелі від 2 до 50 кг, лавки для жиму"
+                               TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Зона: A1–A8" TextColor="{StaticResource Gray400}" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="4">
-					<Label Text="💪 Блокові тренажери" FontSize="16" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="Кросовер, тяга верхнього блоку, тренажер Сміта"
-                           TextColor="{StaticResource Gray200}"/>
-					<Label Text="Зона: C1–C6" TextColor="{StaticResource Gray400}" FontSize="12"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="🚴 Кардіозона" FontSize="16" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Бігові доріжки, велотренажери, еліптичні тренажери"
+                               TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Зона: B1–B12" TextColor="{StaticResource Gray400}" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Button Text="Дізнатись більше про зал"
-                    Clicked="OnDynamicPageClicked"
-                    BackgroundColor="{StaticResource Tertiary}"
-                    TextColor="White" CornerRadius="10"/>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="💪 Блокові тренажери" FontSize="16" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="Кросовер, тяга верхнього блоку, тренажер Сміта"
+                               TextColor="{StaticResource Gray200}"/>
+                        <Label Text="Зона: C1–C6" TextColor="{StaticResource Gray400}" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
 
-            <Button Text="Довідка" Clicked="OnHelpClicked"
-        BackgroundColor="{StaticResource Secondary}"
-        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+                <Button Text="Дізнатись більше про зал"
+                        Clicked="OnDynamicPageClicked"
+                        BackgroundColor="{StaticResource Tertiary}"
+                        TextColor="White" CornerRadius="10"/>
+                <Button Text="Довідка" Clicked="OnHelpClicked"
+                        BackgroundColor="{StaticResource Secondary}"
+                        TextColor="{StaticResource Accent}" CornerRadius="10"/>
 
-        </VerticalStackLayout>
-	</ScrollView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,10">
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}"/>
+                <Label Text="© All rights reserved by Valeriia"
+                       FontSize="11" TextColor="{StaticResource Gray500}"
+                       HorizontalOptions="Center" Margin="0,4,0,0"/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

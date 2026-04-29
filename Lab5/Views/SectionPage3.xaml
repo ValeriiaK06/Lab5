@@ -4,62 +4,72 @@
              x:Class="Lab5.Views.SectionPage3"
              Title="Абонементи"
              BackgroundColor="{StaticResource Primary}">
-	<ScrollView>
-		<VerticalStackLayout Padding="20" Spacing="14">
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto">
 
-			<Label Text="💳 Абонементи" FontSize="26" FontAttributes="Bold"
-                   TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
+            <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="14">
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="🥉 Базовий" FontSize="17" FontAttributes="Bold"
-                           TextColor="{StaticResource Gray200}"/>
-					<Label Text="• Доступ до тренажерного залу" TextColor="{StaticResource Gray300}"/>
-					<Label Text="• Необмежена кількість відвідувань" TextColor="{StaticResource Gray300}"/>
-					<Label Text="• Шафки для речей" TextColor="{StaticResource Gray300}"/>
-					<Label Text="799 грн / місяць" FontSize="18" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Label Text="💳 Абонементи" FontSize="26" FontAttributes="Bold"
+                       TextColor="{StaticResource Accent}" HorizontalOptions="Center"/>
 
-			<Border BackgroundColor="{StaticResource Tertiary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="🥇 Преміум ⭐" FontSize="17" FontAttributes="Bold"
-                           TextColor="White"/>
-					<Label Text="• Все з базового" TextColor="{StaticResource Gray100}"/>
-					<Label Text="• Групові заняття включено" TextColor="{StaticResource Gray100}"/>
-					<Label Text="• Консультація тренера 2×/місяць" TextColor="{StaticResource Gray100}"/>
-					<Label Text="• Сауна та басейн" TextColor="{StaticResource Gray100}"/>
-					<Label Text="1 499 грн / місяць" FontSize="18" FontAttributes="Bold"
-                           TextColor="White"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🥉 Базовий" FontSize="17" FontAttributes="Bold"
+                               TextColor="{StaticResource Gray200}"/>
+                        <Label Text="• Доступ до тренажерного залу" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="• Необмежена кількість відвідувань" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="• Шафки для речей" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="799 грн / місяць" FontSize="18" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Border BackgroundColor="{StaticResource Secondary}"
-                    StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
-				<VerticalStackLayout Spacing="6">
-					<Label Text="👑 VIP" FontSize="17" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-					<Label Text="• Все з Преміум" TextColor="{StaticResource Gray300}"/>
-					<Label Text="• Персональний тренер 3×/тиждень" TextColor="{StaticResource Gray300}"/>
-					<Label Text="• Масаж 1×/тиждень" TextColor="{StaticResource Gray300}"/>
-					<Label Text="• Харчовий план від дієтолога" TextColor="{StaticResource Gray300}"/>
-					<Label Text="2 999 грн / місяць" FontSize="18" FontAttributes="Bold"
-                           TextColor="{StaticResource Accent}"/>
-				</VerticalStackLayout>
-			</Border>
+                <Border BackgroundColor="{StaticResource Tertiary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🥇 Преміум ⭐" FontSize="17" FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Label Text="• Все з базового" TextColor="{StaticResource Gray100}"/>
+                        <Label Text="• Групові заняття включено" TextColor="{StaticResource Gray100}"/>
+                        <Label Text="• Консультація тренера 2×/місяць" TextColor="{StaticResource Gray100}"/>
+                        <Label Text="• Сауна та басейн" TextColor="{StaticResource Gray100}"/>
+                        <Label Text="1 499 грн / місяць" FontSize="18" FontAttributes="Bold"
+                               TextColor="White"/>
+                    </VerticalStackLayout>
+                </Border>
 
-			<Button Text="Порівняти тарифи детальніше"
-                    Clicked="OnDynamicPageClicked"
-                    BackgroundColor="{StaticResource Tertiary}"
-                    TextColor="White" CornerRadius="10"/>
+                <Border BackgroundColor="{StaticResource Secondary}"
+                        StrokeShape="RoundRectangle 12" Stroke="Transparent" Padding="16">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="👑 VIP" FontSize="17" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                        <Label Text="• Все з Преміум" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="• Персональний тренер 3×/тиждень" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="• Масаж 1×/тиждень" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="• Харчовий план від дієтолога" TextColor="{StaticResource Gray300}"/>
+                        <Label Text="2 999 грн / місяць" FontSize="18" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"/>
+                    </VerticalStackLayout>
+                </Border>
 
-            <Button Text="Довідка" Clicked="OnHelpClicked"
-        BackgroundColor="{StaticResource Secondary}"
-        TextColor="{StaticResource Accent}" CornerRadius="10"/>
+                <Button Text="Порівняти тарифи детальніше"
+                        Clicked="OnDynamicPageClicked"
+                        BackgroundColor="{StaticResource Tertiary}"
+                        TextColor="White" CornerRadius="10"/>
+                <Button Text="Довідка" Clicked="OnHelpClicked"
+                        BackgroundColor="{StaticResource Secondary}"
+                        TextColor="{StaticResource Accent}" CornerRadius="10"/>
 
-        </VerticalStackLayout>
-	</ScrollView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,10">
+                <BoxView HeightRequest="1" Color="{StaticResource Secondary}"/>
+                <Label Text="© All rights reserved by Valeriia"
+                       FontSize="11" TextColor="{StaticResource Gray500}"
+                       HorizontalOptions="Center" Margin="0,4,0,0"/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>
